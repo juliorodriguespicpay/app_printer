@@ -1,7 +1,8 @@
 {
   "name": "app_printer",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

@@ -1,3 +1,16 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<ion-header>
+    <h1>Impressora Digital</h1>
+    <div>
+        Impressora conectada: {{ selectedPrinter | json }}
+    </div>
+</ion-header>
+<div class="content">
+    <iframe  height="80%" width="100%" [src]="urlpaste()"></iframe>
+
+
+</div>
+<div class="footer">
+    <ion-button expand="full" color="danger"  (click)="printStuff()">
+        Imprimir
+    </ion-button>
+</div>
